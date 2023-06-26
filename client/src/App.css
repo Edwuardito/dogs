@@ -1,0 +1,386 @@
+*{
+  margin:0;
+  padding:0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.landingPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://i0.wp.com/www.eltributuc.com.ar/wp-content/uploads/2023/06/qué-comen-los-perros.jpg?w=1640&ssl=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.landingPage-btn{
+  padding: 0.7rem 1.2rem;
+  background-color:black;
+  border-style: double;
+  border-radius: 0.3333rem;
+  color: white;
+  font-size: 2rem;
+  transition: padding 0.25s;
+}
+.landingPage-btn:hover{
+  padding: 0.9rem 1.4rem;
+}
+
+
+.nav{
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  background-color: #23242a;
+  min-height:6vh;
+}
+.btns-container{
+  display: flex;
+  min-width: 14%;
+}
+.btns-nav{
+  background-color: #fff;
+  border: none;
+  width: 12vh;
+  height: 4vh;
+  transition: background 0.3s ;
+}
+.btns-nav:hover{
+  background:#F2F4F4;
+}
+.logout{
+  margin: 0 1vh;
+}
+
+.home-image{
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  color:black;
+  font-size: 12px;
+}
+
+.cards-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards-container{
+  display: flex;
+  justify-content: center;
+}
+.cardClass{
+display: flex;
+justify-content: center;
+background-image: url("https://img.freepik.com/vector-premium/marco-floral-tarjeta-invitacion-elementos-borde-flor-contorno-vector-premium_608886-166.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+border-radius:  10px;
+width: 35vh;
+height: 35vh;
+margin-top: 2vh;
+}
+.cardsComponents{
+  width: 100%;
+  height: 100%;
+  padding: 1vh 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.txtCard{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.img-card{
+  width: 100%;
+  height: 15vh;
+}
+
+.btn{
+  width: 100px;
+}
+.btns-filter{
+  background: #2a2f3b;
+  color: #fff;
+  border: 2px #2a2f3b solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btns-filter:hover{
+  background: #484d58;
+}
+
+
+.btnsHomeFilterMargin{
+  margin: 0 0.5em;
+}
+.btns-filter_container{
+  display: flex;
+  position: relative;
+  margin: 2em 5em;
+}
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin:8vh 0 6vh ;
+}
+.menu{
+  width: 80%;
+  height: auto;
+  display: grid;
+  list-style: none;
+  background: #323741;
+  border: 1px #363a43 solid;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  display: none;
+  transition: 0.2s;
+}
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 10px;
+}
+.menu li:hover {
+background: #2a2d35;
+}
+.active{
+  background: #23242a;
+}
+.menu-open {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  opacity: 1;
+}
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+} 
+
+
+
+.btn-onSearch_cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5em;
+}
+.btn-onSearch{
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border-color: black;
+  margin: 0 0.25em;
+}
+.buttonsList{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.buttons{
+  display: flex;
+}
+.api-db-container{
+  width: 10%;
+  height: 100%;
+}
+.api-db{
+  list-style: none;
+  background-color: #23242a;
+  width: 100%;
+  color: #fff;
+  padding:1vh;
+  margin: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.api-db:hover{
+  background: #484d58;
+}
+.btn-cont{
+  margin-top: 3vh;
+}
+.form {
+  margin: 20px;
+  display: flex;
+  background-color:#424751;
+  color: white;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 500px;
+  height: 750px;
+}
+.form-elements{
+margin: 10px;
+}
+.form-elements input{
+  margin: 25px;
+  border-radius: 5px;
+}
+.form-cont{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-image: url('https://i0.wp.com/www.eltributuc.com.ar/wp-content/uploads/2023/06/qué-comen-los-perros.jpg?w=1640&ssl=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.minMax{
+  display: flex;
+}
+.menu-form{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  width: 60%;
+  margin-left: -13%;
+  margin-top: 1.5%;
+}
+.submit{
+  border-radius: 5px;
+  background: #2a2f3b;
+  margin: 10px;
+  color: white;
+  padding: 10px;
+  border: none;
+  transition: background 0.3s;
+}
+.submit:hover{
+  background: #323741;
+}
+.error-form{
+  color:black
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('https://img2.wallspic.com/attachments/originals/4/7/5/1/4/141574-agua-blanco-informacion-naturaleza-paisaje_natural-6232x4674.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.detailContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.dogDetail{
+  width: 70vh;
+  height: 75vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+.detailCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.4rem;
+}
+.containerWithStyle{
+ background-color: #FFF;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px -4px 40px 34px rgba(0,0,0,0.81);
+  -moz-box-shadow: -1px -4px 40px 34px rgba(0,0,0,0.81);
+  box-shadow: -1px -4px 40px 34px rgba(0,0,0,0.81); 
+}
+.nameID{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.imgDetail{
+  margin: 1rem 0 ;
+  width: 80%;
+  height: 50%;
+  border-radius: 10px;
+
+}
+.flexDetail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family:cursive;
+}
+.heightWeight{
+  margin: 2vh;
+  display: flex;
+  width: 30vh;
+}
+.idContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.idMargin{
+ margin-right: 2rem;
+}
